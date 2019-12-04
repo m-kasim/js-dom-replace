@@ -484,6 +484,9 @@
 			var replacement = this.options.replace || '$&';
 			var wrapper = this.options.wrap;
 			var wrapperClass = this.options.wrapClass;
+            var id = this.options.id;
+			var title = this.options.title;
+            var style = this.options.style;
 
 			if (wrapper && wrapper.nodeType) {
 				// Wrapper has been provided as a stencil-node for us to clone:
@@ -505,6 +508,21 @@
  			if (el && wrapperClass) {
 				el.className = wrapperClass;
 			}
+
+            // Option: Add ID to replaced tag element
+            if (el && id) {
+                el.id = id;
+            }
+
+            // Option: Add Title to replaced tag element
+            if (el && id) {
+                el.title = title;
+            }
+
+            // Option: Add Inline CSS styles to replaced tag element
+            if (el && id) {
+                el.style.cssText = style;
+            }
 
 			replacement = doc.createTextNode(
 				this.prepareReplacementString(
