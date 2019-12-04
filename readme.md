@@ -9,9 +9,9 @@ Added functionalities:
 Add ```id```, ```title``` and ```CSS Style``` to each found element and much more!:
 
 List of additionally supported options:
-id - element ID (```<div id="element-unique-id"></div>```)
-title - element Title which is shown over mouse hover (```<div title="This is hover title!"></div>```)
-style - direct inline style (```<div style="color: red;"></div>```)
+- `id` - element ID (```<div id="element-unique-id"></div>```)
+- `title` - element Title which is shown over mouse hover (```<div title="This is hover title!"></div>```)
+- `style` - direct inline style (```<div style="color: red;"></div>```)
 
 Example:
 ```
